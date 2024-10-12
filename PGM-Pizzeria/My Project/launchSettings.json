@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PGM-Pizzeria": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
