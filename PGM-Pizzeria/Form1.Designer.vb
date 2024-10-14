@@ -25,9 +25,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
         Label2 = New Label()
-        PictureBox2 = New PictureBox()
         PictureBox3 = New PictureBox()
-        PictureBox4 = New PictureBox()
         PictureBox6 = New PictureBox()
         PictureBox7 = New PictureBox()
         PictureBox1 = New PictureBox()
@@ -68,20 +66,20 @@ Partial Class Form1
         Label4 = New Label()
         Label3 = New Label()
         GroupBox2 = New GroupBox()
-        RadioButton6 = New RadioButton()
+        RadioButtonhwings = New RadioButton()
         Label20 = New Label()
         Label29 = New Label()
-        RadioButton5 = New RadioButton()
+        RadioButtonwings = New RadioButton()
         Label30 = New Label()
         Label31 = New Label()
-        RadioButton4 = New RadioButton()
+        RadioButtonempanada = New RadioButton()
         Label32 = New Label()
         Label33 = New Label()
-        RadioButton3 = New RadioButton()
+        RadioButtongarlicb = New RadioButton()
         Label34 = New Label()
-        RadioButton2 = New RadioButton()
+        RadioButtonmozzarella = New RadioButton()
         Label35 = New Label()
-        RadioButton1 = New RadioButton()
+        RadioButtonsampler = New RadioButton()
         Label36 = New Label()
         Label37 = New Label()
         Label38 = New Label()
@@ -90,16 +88,16 @@ Partial Class Form1
         Label40 = New Label()
         TextBoxqtyside = New TextBox()
         GroupBox3 = New GroupBox()
-        RadioButton7 = New RadioButton()
+        RadioButtonicecream = New RadioButton()
         Label19 = New Label()
-        RadioButton8 = New RadioButton()
+        RadioButtonccake = New RadioButton()
         ButtonDESSERTS = New Button()
-        RadioButton9 = New RadioButton()
-        RadioButton10 = New RadioButton()
+        RadioButtoncflan = New RadioButton()
+        RadioButtonvflan = New RadioButton()
         Label42 = New Label()
-        RadioButton11 = New RadioButton()
+        RadioButtontreslech = New RadioButton()
         Label43 = New Label()
-        RadioButton12 = New RadioButton()
+        RadioButtonicecreamc = New RadioButton()
         Label44 = New Label()
         Label45 = New Label()
         Label46 = New Label()
@@ -112,13 +110,13 @@ Partial Class Form1
         Label53 = New Label()
         TextBoxqtydessert = New TextBox()
         GroupBox4 = New GroupBox()
-        RadioButton16 = New RadioButton()
-        RadioButton17 = New RadioButton()
-        RadioButton18 = New RadioButton()
-        RadioButton13 = New RadioButton()
-        RadioButton14 = New RadioButton()
+        RadioButtonmix8oz = New RadioButton()
+        RadioButtonbeer = New RadioButton()
+        RadioButtonmix12oz = New RadioButton()
+        RadioButton16oz = New RadioButton()
+        RadioButtonwater = New RadioButton()
         Label21 = New Label()
-        RadioButton15 = New RadioButton()
+        RadioButton32oz = New RadioButton()
         TextBoxqtydrinks = New TextBox()
         ButtonDRINKS = New Button()
         Label54 = New Label()
@@ -136,7 +134,6 @@ Partial Class Form1
         Label65 = New Label()
         Buttonsalida = New Button()
         Button1 = New Button()
-        Button7 = New Button()
         RichTextBoxITEM1 = New RichTextBox()
         RichTextBoxQTY1 = New RichTextBox()
         RichTextBoxPRICE1 = New RichTextBox()
@@ -183,9 +180,7 @@ Partial Class Form1
         Label16 = New Label()
         Label17 = New Label()
         Label18 = New Label()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -200,9 +195,9 @@ Partial Class Form1
         ' 
         Label1.BackColor = SystemColors.ButtonHighlight
         Label1.FlatStyle = FlatStyle.Flat
-        Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Impact", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(127, 42)
+        Label1.Location = New Point(127, 14)
         Label1.Name = "Label1"
         Label1.Size = New Size(218, 34)
         Label1.TabIndex = 0
@@ -212,49 +207,29 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.BackColor = SystemColors.ButtonHighlight
-        Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.ActiveCaptionText
-        Label2.Location = New Point(130, 92)
+        Label2.Location = New Point(141, 64)
         Label2.Name = "Label2"
         Label2.Size = New Size(187, 32)
         Label2.TabIndex = 7
         Label2.Text = "Dorado, 00646 P.R."
         Label2.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(399, 663)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(90, 77)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 8
-        PictureBox2.TabStop = False
-        ' 
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(1373, -1)
+        PictureBox3.Location = New Point(1365, 12)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(90, 77)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox3.TabIndex = 9
         PictureBox3.TabStop = False
         ' 
-        ' PictureBox4
-        ' 
-        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(1373, 663)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(90, 77)
-        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox4.TabIndex = 10
-        PictureBox4.TabStop = False
-        ' 
         ' PictureBox6
         ' 
         PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
-        PictureBox6.Location = New Point(399, -1)
+        PictureBox6.Location = New Point(392, 12)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(90, 77)
         PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
@@ -284,7 +259,7 @@ Partial Class Form1
         ' 
         ' GroupPIZZA
         ' 
-        GroupPIZZA.BackColor = Color.LightGoldenrodYellow
+        GroupPIZZA.BackColor = Color.FloralWhite
         GroupPIZZA.Controls.Add(TextBoxqtypizza)
         GroupPIZZA.Controls.Add(RadioButtonmedium)
         GroupPIZZA.Controls.Add(RadioButtonlarge)
@@ -307,7 +282,7 @@ Partial Class Form1
         GroupPIZZA.Controls.Add(Label10)
         GroupPIZZA.Controls.Add(Label4)
         GroupPIZZA.Controls.Add(Label3)
-        GroupPIZZA.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupPIZZA.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupPIZZA.Location = New Point(417, 42)
         GroupPIZZA.Name = "GroupPIZZA"
         GroupPIZZA.Size = New Size(490, 352)
@@ -385,7 +360,7 @@ Partial Class Form1
         ' 
         ' GroupBoxING
         ' 
-        GroupBoxING.BackColor = Color.LightGoldenrodYellow
+        GroupBoxING.BackColor = Color.FloralWhite
         GroupBoxING.Controls.Add(Label71)
         GroupBoxING.Controls.Add(RadioButtonsausage)
         GroupBoxING.Controls.Add(RadioButtonmeat)
@@ -399,7 +374,7 @@ Partial Class Form1
         GroupBoxING.Controls.Add(Label77)
         GroupBoxING.Controls.Add(Label78)
         GroupBoxING.Controls.Add(Label79)
-        GroupBoxING.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupBoxING.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBoxING.Location = New Point(286, 0)
         GroupBoxING.Name = "GroupBoxING"
         GroupBoxING.Size = New Size(202, 352)
@@ -412,7 +387,7 @@ Partial Class Form1
         Label71.AutoSize = True
         Label71.Location = New Point(188, 101)
         Label71.Name = "Label71"
-        Label71.Size = New Size(0, 21)
+        Label71.Size = New Size(0, 22)
         Label71.TabIndex = 76
         ' 
         ' RadioButtonsausage
@@ -480,7 +455,7 @@ Partial Class Form1
         Label74.AutoSize = True
         Label74.Location = New Point(55, 271)
         Label74.Name = "Label74"
-        Label74.Size = New Size(68, 21)
+        Label74.Size = New Size(85, 22)
         Label74.TabIndex = 55
         Label74.Text = "Sausage"
         ' 
@@ -489,7 +464,7 @@ Partial Class Form1
         Label75.AutoSize = True
         Label75.Location = New Point(55, 228)
         Label75.Name = "Label75"
-        Label75.Size = New Size(45, 21)
+        Label75.Size = New Size(51, 22)
         Label75.TabIndex = 54
         Label75.Text = "Meat"
         ' 
@@ -498,7 +473,7 @@ Partial Class Form1
         Label76.AutoSize = True
         Label76.Location = New Point(55, 188)
         Label76.Name = "Label76"
-        Label76.Size = New Size(64, 21)
+        Label76.Size = New Size(80, 22)
         Label76.TabIndex = 53
         Label76.Text = "Veggies"
         ' 
@@ -507,7 +482,7 @@ Partial Class Form1
         Label77.AutoSize = True
         Label77.Location = New Point(55, 143)
         Label77.Name = "Label77"
-        Label77.Size = New Size(64, 21)
+        Label77.Size = New Size(75, 22)
         Label77.TabIndex = 52
         Label77.Text = "Chorizo"
         ' 
@@ -516,7 +491,7 @@ Partial Class Form1
         Label78.AutoSize = True
         Label78.Location = New Point(55, 104)
         Label78.Name = "Label78"
-        Label78.Size = New Size(43, 21)
+        Label78.Size = New Size(49, 22)
         Label78.TabIndex = 51
         Label78.Text = "Ham"
         ' 
@@ -525,7 +500,7 @@ Partial Class Form1
         Label79.AutoSize = True
         Label79.Location = New Point(55, 58)
         Label79.Name = "Label79"
-        Label79.Size = New Size(80, 21)
+        Label79.Size = New Size(98, 22)
         Label79.TabIndex = 45
         Label79.Text = "Pepperoni"
         ' 
@@ -544,7 +519,7 @@ Partial Class Form1
         Label14.AutoSize = True
         Label14.Location = New Point(209, 274)
         Label14.Name = "Label14"
-        Label14.Size = New Size(58, 21)
+        Label14.Size = New Size(70, 22)
         Label14.TabIndex = 43
         Label14.Text = "$39.99"
         ' 
@@ -553,7 +528,7 @@ Partial Class Form1
         Label15.AutoSize = True
         Label15.Location = New Point(57, 272)
         Label15.Name = "Label15"
-        Label15.Size = New Size(121, 21)
+        Label15.Size = New Size(147, 22)
         Label15.TabIndex = 42
         Label15.Text = "Superman Pizza"
         ' 
@@ -562,7 +537,7 @@ Partial Class Form1
         Label12.AutoSize = True
         Label12.Location = New Point(209, 229)
         Label12.Name = "Label12"
-        Label12.Size = New Size(58, 21)
+        Label12.Size = New Size(70, 22)
         Label12.TabIndex = 41
         Label12.Text = "$20.99"
         ' 
@@ -571,7 +546,7 @@ Partial Class Form1
         Label13.AutoSize = True
         Label13.Location = New Point(57, 229)
         Label13.Name = "Label13"
-        Label13.Size = New Size(118, 21)
+        Label13.Size = New Size(142, 22)
         Label13.TabIndex = 40
         Label13.Text = "Sportman Pizza"
         ' 
@@ -580,7 +555,7 @@ Partial Class Form1
         Label9.AutoSize = True
         Label9.Location = New Point(209, 189)
         Label9.Name = "Label9"
-        Label9.Size = New Size(58, 21)
+        Label9.Size = New Size(70, 22)
         Label9.TabIndex = 39
         Label9.Text = "$15.99"
         ' 
@@ -589,7 +564,7 @@ Partial Class Form1
         Label11.AutoSize = True
         Label11.Location = New Point(57, 189)
         Label11.Name = "Label11"
-        Label11.Size = New Size(105, 21)
+        Label11.Size = New Size(132, 22)
         Label11.TabIndex = 38
         Label11.Text = "XT large Pizza"
         ' 
@@ -598,7 +573,7 @@ Partial Class Form1
         Label7.AutoSize = True
         Label7.Location = New Point(209, 145)
         Label7.Name = "Label7"
-        Label7.Size = New Size(58, 21)
+        Label7.Size = New Size(70, 22)
         Label7.TabIndex = 37
         Label7.Text = "$12.99"
         ' 
@@ -607,7 +582,7 @@ Partial Class Form1
         Label8.AutoSize = True
         Label8.Location = New Point(57, 145)
         Label8.Name = "Label8"
-        Label8.Size = New Size(88, 21)
+        Label8.Size = New Size(109, 22)
         Label8.TabIndex = 36
         Label8.Text = "Large Pizza"
         ' 
@@ -616,7 +591,7 @@ Partial Class Form1
         Label5.AutoSize = True
         Label5.Location = New Point(209, 105)
         Label5.Name = "Label5"
-        Label5.Size = New Size(58, 21)
+        Label5.Size = New Size(70, 22)
         Label5.TabIndex = 35
         Label5.Text = "$10.99"
         ' 
@@ -625,7 +600,7 @@ Partial Class Form1
         Label6.AutoSize = True
         Label6.Location = New Point(57, 105)
         Label6.Name = "Label6"
-        Label6.Size = New Size(107, 21)
+        Label6.Size = New Size(127, 22)
         Label6.TabIndex = 34
         Label6.Text = "Medium Pizza"
         ' 
@@ -634,7 +609,7 @@ Partial Class Form1
         Label10.AutoSize = True
         Label10.Location = New Point(209, 66)
         Label10.Name = "Label10"
-        Label10.Size = New Size(49, 21)
+        Label10.Size = New Size(59, 22)
         Label10.TabIndex = 33
         Label10.Text = "$9.99"
         ' 
@@ -643,7 +618,7 @@ Partial Class Form1
         Label4.AutoSize = True
         Label4.Location = New Point(57, 66)
         Label4.Name = "Label4"
-        Label4.Size = New Size(88, 21)
+        Label4.Size = New Size(107, 22)
         Label4.TabIndex = 15
         Label4.Text = "Small Pizza"
         ' 
@@ -659,21 +634,21 @@ Partial Class Form1
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.BackColor = Color.LightGoldenrodYellow
-        GroupBox2.Controls.Add(RadioButton6)
+        GroupBox2.BackColor = Color.FloralWhite
+        GroupBox2.Controls.Add(RadioButtonhwings)
         GroupBox2.Controls.Add(Label20)
         GroupBox2.Controls.Add(Label29)
-        GroupBox2.Controls.Add(RadioButton5)
+        GroupBox2.Controls.Add(RadioButtonwings)
         GroupBox2.Controls.Add(Label30)
         GroupBox2.Controls.Add(Label31)
-        GroupBox2.Controls.Add(RadioButton4)
+        GroupBox2.Controls.Add(RadioButtonempanada)
         GroupBox2.Controls.Add(Label32)
         GroupBox2.Controls.Add(Label33)
-        GroupBox2.Controls.Add(RadioButton3)
+        GroupBox2.Controls.Add(RadioButtongarlicb)
         GroupBox2.Controls.Add(Label34)
-        GroupBox2.Controls.Add(RadioButton2)
+        GroupBox2.Controls.Add(RadioButtonmozzarella)
         GroupBox2.Controls.Add(Label35)
-        GroupBox2.Controls.Add(RadioButton1)
+        GroupBox2.Controls.Add(RadioButtonsampler)
         GroupBox2.Controls.Add(Label36)
         GroupBox2.Controls.Add(Label37)
         GroupBox2.Controls.Add(Label38)
@@ -681,7 +656,7 @@ Partial Class Form1
         GroupBox2.Controls.Add(ButtonSIDES)
         GroupBox2.Controls.Add(Label40)
         GroupBox2.Controls.Add(TextBoxqtyside)
-        GroupBox2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupBox2.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBox2.Location = New Point(925, 42)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(238, 352)
@@ -689,15 +664,15 @@ Partial Class Form1
         GroupBox2.TabStop = False
         GroupBox2.Text = "SIDES"
         ' 
-        ' RadioButton6
+        ' RadioButtonhwings
         ' 
-        RadioButton6.AutoSize = True
-        RadioButton6.Location = New Point(28, 237)
-        RadioButton6.Name = "RadioButton6"
-        RadioButton6.Size = New Size(14, 13)
-        RadioButton6.TabIndex = 93
-        RadioButton6.TabStop = True
-        RadioButton6.UseVisualStyleBackColor = True
+        RadioButtonhwings.AutoSize = True
+        RadioButtonhwings.Location = New Point(22, 236)
+        RadioButtonhwings.Name = "RadioButtonhwings"
+        RadioButtonhwings.Size = New Size(14, 13)
+        RadioButtonhwings.TabIndex = 93
+        RadioButtonhwings.TabStop = True
+        RadioButtonhwings.UseVisualStyleBackColor = True
         ' 
         ' Label20
         ' 
@@ -712,149 +687,149 @@ Partial Class Form1
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Location = New Point(172, 278)
+        Label29.Location = New Point(166, 277)
         Label29.Name = "Label29"
-        Label29.Size = New Size(58, 21)
+        Label29.Size = New Size(70, 22)
         Label29.TabIndex = 43
         Label29.Text = "$20.99"
         ' 
-        ' RadioButton5
+        ' RadioButtonwings
         ' 
-        RadioButton5.AutoSize = True
-        RadioButton5.Location = New Point(28, 197)
-        RadioButton5.Name = "RadioButton5"
-        RadioButton5.Size = New Size(14, 13)
-        RadioButton5.TabIndex = 92
-        RadioButton5.TabStop = True
-        RadioButton5.UseVisualStyleBackColor = True
+        RadioButtonwings.AutoSize = True
+        RadioButtonwings.Location = New Point(22, 196)
+        RadioButtonwings.Name = "RadioButtonwings"
+        RadioButtonwings.Size = New Size(14, 13)
+        RadioButtonwings.TabIndex = 92
+        RadioButtonwings.TabStop = True
+        RadioButtonwings.UseVisualStyleBackColor = True
         ' 
         ' Label30
         ' 
         Label30.AutoSize = True
-        Label30.Location = New Point(48, 276)
+        Label30.Location = New Point(42, 275)
         Label30.Name = "Label30"
-        Label30.Size = New Size(68, 21)
+        Label30.Size = New Size(81, 22)
         Label30.TabIndex = 42
         Label30.Text = "Sampler"
         ' 
         ' Label31
         ' 
         Label31.AutoSize = True
-        Label31.Location = New Point(172, 233)
+        Label31.Location = New Point(166, 232)
         Label31.Name = "Label31"
-        Label31.Size = New Size(58, 21)
+        Label31.Size = New Size(70, 22)
         Label31.TabIndex = 41
         Label31.Text = "$12.99"
         ' 
-        ' RadioButton4
+        ' RadioButtonempanada
         ' 
-        RadioButton4.AutoSize = True
-        RadioButton4.Location = New Point(28, 162)
-        RadioButton4.Name = "RadioButton4"
-        RadioButton4.Size = New Size(14, 13)
-        RadioButton4.TabIndex = 89
-        RadioButton4.TabStop = True
-        RadioButton4.UseVisualStyleBackColor = True
+        RadioButtonempanada.AutoSize = True
+        RadioButtonempanada.Location = New Point(22, 161)
+        RadioButtonempanada.Name = "RadioButtonempanada"
+        RadioButtonempanada.Size = New Size(14, 13)
+        RadioButtonempanada.TabIndex = 89
+        RadioButtonempanada.TabStop = True
+        RadioButtonempanada.UseVisualStyleBackColor = True
         ' 
         ' Label32
         ' 
         Label32.AutoSize = True
-        Label32.Location = New Point(48, 233)
+        Label32.Location = New Point(42, 232)
         Label32.Name = "Label32"
-        Label32.Size = New Size(83, 21)
+        Label32.Size = New Size(100, 22)
         Label32.TabIndex = 40
         Label32.Text = "Hot WIngs"
         ' 
         ' Label33
         ' 
         Label33.AutoSize = True
-        Label33.Location = New Point(172, 193)
+        Label33.Location = New Point(166, 192)
         Label33.Name = "Label33"
-        Label33.Size = New Size(58, 21)
+        Label33.Size = New Size(70, 22)
         Label33.TabIndex = 39
         Label33.Text = "$12.99"
         ' 
-        ' RadioButton3
+        ' RadioButtongarlicb
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(28, 129)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(14, 13)
-        RadioButton3.TabIndex = 91
-        RadioButton3.TabStop = True
-        RadioButton3.UseVisualStyleBackColor = True
+        RadioButtongarlicb.AutoSize = True
+        RadioButtongarlicb.Location = New Point(22, 128)
+        RadioButtongarlicb.Name = "RadioButtongarlicb"
+        RadioButtongarlicb.Size = New Size(14, 13)
+        RadioButtongarlicb.TabIndex = 91
+        RadioButtongarlicb.TabStop = True
+        RadioButtongarlicb.UseVisualStyleBackColor = True
         ' 
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Location = New Point(48, 193)
+        Label34.Location = New Point(42, 192)
         Label34.Name = "Label34"
-        Label34.Size = New Size(54, 21)
+        Label34.Size = New Size(64, 22)
         Label34.TabIndex = 38
         Label34.Text = "Wings"
         ' 
-        ' RadioButton2
+        ' RadioButtonmozzarella
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(28, 86)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(14, 13)
-        RadioButton2.TabIndex = 90
-        RadioButton2.TabStop = True
-        RadioButton2.UseVisualStyleBackColor = True
+        RadioButtonmozzarella.AutoSize = True
+        RadioButtonmozzarella.Location = New Point(22, 85)
+        RadioButtonmozzarella.Name = "RadioButtonmozzarella"
+        RadioButtonmozzarella.Size = New Size(14, 13)
+        RadioButtonmozzarella.TabIndex = 90
+        RadioButtonmozzarella.TabStop = True
+        RadioButtonmozzarella.UseVisualStyleBackColor = True
         ' 
         ' Label35
         ' 
         Label35.AutoSize = True
-        Label35.Location = New Point(172, 158)
+        Label35.Location = New Point(166, 157)
         Label35.Name = "Label35"
-        Label35.Size = New Size(58, 21)
+        Label35.Size = New Size(69, 22)
         Label35.TabIndex = 37
         Label35.Text = "$11.99"
         ' 
-        ' RadioButton1
+        ' RadioButtonsampler
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(28, 282)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(14, 13)
-        RadioButton1.TabIndex = 89
-        RadioButton1.TabStop = True
-        RadioButton1.UseVisualStyleBackColor = True
+        RadioButtonsampler.AutoSize = True
+        RadioButtonsampler.Location = New Point(22, 281)
+        RadioButtonsampler.Name = "RadioButtonsampler"
+        RadioButtonsampler.Size = New Size(14, 13)
+        RadioButtonsampler.TabIndex = 89
+        RadioButtonsampler.TabStop = True
+        RadioButtonsampler.UseVisualStyleBackColor = True
         ' 
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Location = New Point(48, 158)
+        Label36.Location = New Point(42, 157)
         Label36.Name = "Label36"
-        Label36.Size = New Size(90, 21)
+        Label36.Size = New Size(111, 22)
         Label36.TabIndex = 36
         Label36.Text = "Empanadas"
         ' 
         ' Label37
         ' 
         Label37.AutoSize = True
-        Label37.Location = New Point(172, 121)
+        Label37.Location = New Point(166, 120)
         Label37.Name = "Label37"
-        Label37.Size = New Size(58, 21)
+        Label37.Size = New Size(70, 22)
         Label37.TabIndex = 35
         Label37.Text = "$10.99"
         ' 
         ' Label38
         ' 
         Label38.AutoSize = True
-        Label38.Location = New Point(48, 121)
+        Label38.Location = New Point(42, 120)
         Label38.Name = "Label38"
-        Label38.Size = New Size(94, 21)
+        Label38.Size = New Size(115, 22)
         Label38.TabIndex = 34
         Label38.Text = "Garlic Bread"
         ' 
         ' Label39
         ' 
         Label39.AutoSize = True
-        Label39.Location = New Point(172, 82)
+        Label39.Location = New Point(166, 81)
         Label39.Name = "Label39"
-        Label39.Size = New Size(49, 21)
+        Label39.Size = New Size(59, 22)
         Label39.TabIndex = 33
         Label39.Text = "$9.99"
         ' 
@@ -870,9 +845,9 @@ Partial Class Form1
         ' Label40
         ' 
         Label40.AutoSize = True
-        Label40.Location = New Point(48, 82)
+        Label40.Location = New Point(42, 81)
         Label40.Name = "Label40"
-        Label40.Size = New Size(92, 21)
+        Label40.Size = New Size(109, 22)
         Label40.TabIndex = 15
         Label40.Text = "Mozzarellas"
         ' 
@@ -887,17 +862,17 @@ Partial Class Form1
         ' 
         ' GroupBox3
         ' 
-        GroupBox3.BackColor = Color.LightGoldenrodYellow
-        GroupBox3.Controls.Add(RadioButton7)
+        GroupBox3.BackColor = Color.FloralWhite
+        GroupBox3.Controls.Add(RadioButtonicecream)
         GroupBox3.Controls.Add(Label19)
-        GroupBox3.Controls.Add(RadioButton8)
+        GroupBox3.Controls.Add(RadioButtonccake)
         GroupBox3.Controls.Add(ButtonDESSERTS)
-        GroupBox3.Controls.Add(RadioButton9)
-        GroupBox3.Controls.Add(RadioButton10)
+        GroupBox3.Controls.Add(RadioButtoncflan)
+        GroupBox3.Controls.Add(RadioButtonvflan)
         GroupBox3.Controls.Add(Label42)
-        GroupBox3.Controls.Add(RadioButton11)
+        GroupBox3.Controls.Add(RadioButtontreslech)
         GroupBox3.Controls.Add(Label43)
-        GroupBox3.Controls.Add(RadioButton12)
+        GroupBox3.Controls.Add(RadioButtonicecreamc)
         GroupBox3.Controls.Add(Label44)
         GroupBox3.Controls.Add(Label45)
         GroupBox3.Controls.Add(Label46)
@@ -909,7 +884,7 @@ Partial Class Form1
         GroupBox3.Controls.Add(Label52)
         GroupBox3.Controls.Add(Label53)
         GroupBox3.Controls.Add(TextBoxqtydessert)
-        GroupBox3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupBox3.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBox3.Location = New Point(1180, 44)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(245, 350)
@@ -917,15 +892,15 @@ Partial Class Form1
         GroupBox3.TabStop = False
         GroupBox3.Text = "DESSERTS"
         ' 
-        ' RadioButton7
+        ' RadioButtonicecream
         ' 
-        RadioButton7.AutoSize = True
-        RadioButton7.Location = New Point(13, 241)
-        RadioButton7.Name = "RadioButton7"
-        RadioButton7.Size = New Size(14, 13)
-        RadioButton7.TabIndex = 99
-        RadioButton7.TabStop = True
-        RadioButton7.UseVisualStyleBackColor = True
+        RadioButtonicecream.AutoSize = True
+        RadioButtonicecream.Location = New Point(13, 241)
+        RadioButtonicecream.Name = "RadioButtonicecream"
+        RadioButtonicecream.Size = New Size(14, 13)
+        RadioButtonicecream.TabIndex = 99
+        RadioButtonicecream.TabStop = True
+        RadioButtonicecream.UseVisualStyleBackColor = True
         ' 
         ' Label19
         ' 
@@ -937,15 +912,15 @@ Partial Class Form1
         Label19.TabIndex = 45
         Label19.Text = "QTY"
         ' 
-        ' RadioButton8
+        ' RadioButtonccake
         ' 
-        RadioButton8.AutoSize = True
-        RadioButton8.Location = New Point(13, 202)
-        RadioButton8.Name = "RadioButton8"
-        RadioButton8.Size = New Size(14, 13)
-        RadioButton8.TabIndex = 98
-        RadioButton8.TabStop = True
-        RadioButton8.UseVisualStyleBackColor = True
+        RadioButtonccake.AutoSize = True
+        RadioButtonccake.Location = New Point(13, 202)
+        RadioButtonccake.Name = "RadioButtonccake"
+        RadioButtonccake.Size = New Size(14, 13)
+        RadioButtonccake.TabIndex = 98
+        RadioButtonccake.TabStop = True
+        RadioButtonccake.UseVisualStyleBackColor = True
         ' 
         ' ButtonDESSERTS
         ' 
@@ -956,70 +931,70 @@ Partial Class Form1
         ButtonDESSERTS.Text = "ADD"
         ButtonDESSERTS.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton9
+        ' RadioButtoncflan
         ' 
-        RadioButton9.AutoSize = True
-        RadioButton9.Location = New Point(13, 160)
-        RadioButton9.Name = "RadioButton9"
-        RadioButton9.Size = New Size(14, 13)
-        RadioButton9.TabIndex = 94
-        RadioButton9.TabStop = True
-        RadioButton9.UseVisualStyleBackColor = True
+        RadioButtoncflan.AutoSize = True
+        RadioButtoncflan.Location = New Point(13, 160)
+        RadioButtoncflan.Name = "RadioButtoncflan"
+        RadioButtoncflan.Size = New Size(14, 13)
+        RadioButtoncflan.TabIndex = 94
+        RadioButtoncflan.TabStop = True
+        RadioButtoncflan.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton10
+        ' RadioButtonvflan
         ' 
-        RadioButton10.AutoSize = True
-        RadioButton10.Location = New Point(13, 123)
-        RadioButton10.Name = "RadioButton10"
-        RadioButton10.Size = New Size(14, 13)
-        RadioButton10.TabIndex = 97
-        RadioButton10.TabStop = True
-        RadioButton10.UseVisualStyleBackColor = True
+        RadioButtonvflan.AutoSize = True
+        RadioButtonvflan.Location = New Point(13, 123)
+        RadioButtonvflan.Name = "RadioButtonvflan"
+        RadioButtonvflan.Size = New Size(14, 13)
+        RadioButtonvflan.TabIndex = 97
+        RadioButtonvflan.TabStop = True
+        RadioButtonvflan.UseVisualStyleBackColor = True
         ' 
         ' Label42
         ' 
         Label42.AutoSize = True
         Label42.Location = New Point(183, 276)
         Label42.Name = "Label42"
-        Label42.Size = New Size(49, 21)
+        Label42.Size = New Size(59, 22)
         Label42.TabIndex = 43
         Label42.Text = "$9.99"
         ' 
-        ' RadioButton11
+        ' RadioButtontreslech
         ' 
-        RadioButton11.AutoSize = True
-        RadioButton11.Location = New Point(13, 84)
-        RadioButton11.Name = "RadioButton11"
-        RadioButton11.Size = New Size(14, 13)
-        RadioButton11.TabIndex = 96
-        RadioButton11.TabStop = True
-        RadioButton11.UseVisualStyleBackColor = True
+        RadioButtontreslech.AutoSize = True
+        RadioButtontreslech.Location = New Point(13, 84)
+        RadioButtontreslech.Name = "RadioButtontreslech"
+        RadioButtontreslech.Size = New Size(14, 13)
+        RadioButtontreslech.TabIndex = 96
+        RadioButtontreslech.TabStop = True
+        RadioButtontreslech.UseVisualStyleBackColor = True
         ' 
         ' Label43
         ' 
         Label43.AutoSize = True
-        Label43.Location = New Point(35, 276)
+        Label43.Location = New Point(35, 272)
         Label43.Name = "Label43"
-        Label43.Size = New Size(129, 21)
+        Label43.Size = New Size(95, 44)
         Label43.TabIndex = 42
-        Label43.Text = "Ice cream + Cake"
+        Label43.Text = "Ice cream" & vbCrLf & "+ Cake"
         ' 
-        ' RadioButton12
+        ' RadioButtonicecreamc
         ' 
-        RadioButton12.AutoSize = True
-        RadioButton12.Location = New Point(13, 284)
-        RadioButton12.Name = "RadioButton12"
-        RadioButton12.Size = New Size(14, 13)
-        RadioButton12.TabIndex = 95
-        RadioButton12.TabStop = True
-        RadioButton12.UseVisualStyleBackColor = True
+        RadioButtonicecreamc.AutoSize = True
+        RadioButtonicecreamc.Location = New Point(13, 284)
+        RadioButtonicecreamc.Name = "RadioButtonicecreamc"
+        RadioButtonicecreamc.Size = New Size(14, 13)
+        RadioButtonicecreamc.TabIndex = 95
+        RadioButtonicecreamc.TabStop = True
+        RadioButtonicecreamc.UseVisualStyleBackColor = True
         ' 
         ' Label44
         ' 
         Label44.AutoSize = True
         Label44.Location = New Point(183, 233)
         Label44.Name = "Label44"
-        Label44.Size = New Size(49, 21)
+        Label44.Size = New Size(59, 22)
         Label44.TabIndex = 41
         Label44.Text = "$5.99"
         ' 
@@ -1028,7 +1003,7 @@ Partial Class Form1
         Label45.AutoSize = True
         Label45.Location = New Point(37, 233)
         Label45.Name = "Label45"
-        Label45.Size = New Size(76, 21)
+        Label45.Size = New Size(95, 22)
         Label45.TabIndex = 40
         Label45.Text = "Ice cream"
         ' 
@@ -1037,7 +1012,7 @@ Partial Class Form1
         Label46.AutoSize = True
         Label46.Location = New Point(185, 198)
         Label46.Name = "Label46"
-        Label46.Size = New Size(49, 21)
+        Label46.Size = New Size(59, 22)
         Label46.TabIndex = 39
         Label46.Text = "$5.99"
         ' 
@@ -1046,7 +1021,7 @@ Partial Class Form1
         Label47.AutoSize = True
         Label47.Location = New Point(35, 198)
         Label47.Name = "Label47"
-        Label47.Size = New Size(91, 21)
+        Label47.Size = New Size(117, 22)
         Label47.TabIndex = 38
         Label47.Text = "Cheesecake"
         ' 
@@ -1055,7 +1030,7 @@ Partial Class Form1
         Label48.AutoSize = True
         Label48.Location = New Point(183, 156)
         Label48.Name = "Label48"
-        Label48.Size = New Size(49, 21)
+        Label48.Size = New Size(59, 22)
         Label48.TabIndex = 37
         Label48.Text = "$4.99"
         ' 
@@ -1064,7 +1039,7 @@ Partial Class Form1
         Label49.AutoSize = True
         Label49.Location = New Point(33, 156)
         Label49.Name = "Label49"
-        Label49.Size = New Size(93, 21)
+        Label49.Size = New Size(118, 22)
         Label49.TabIndex = 36
         Label49.Text = "Cheese Flan"
         ' 
@@ -1073,7 +1048,7 @@ Partial Class Form1
         Label50.AutoSize = True
         Label50.Location = New Point(183, 119)
         Label50.Name = "Label50"
-        Label50.Size = New Size(49, 21)
+        Label50.Size = New Size(59, 22)
         Label50.TabIndex = 35
         Label50.Text = "$3.99"
         ' 
@@ -1082,7 +1057,7 @@ Partial Class Form1
         Label51.AutoSize = True
         Label51.Location = New Point(37, 119)
         Label51.Name = "Label51"
-        Label51.Size = New Size(89, 21)
+        Label51.Size = New Size(105, 22)
         Label51.TabIndex = 34
         Label51.Text = "Vanilla Flan"
         ' 
@@ -1091,7 +1066,7 @@ Partial Class Form1
         Label52.AutoSize = True
         Label52.Location = New Point(183, 80)
         Label52.Name = "Label52"
-        Label52.Size = New Size(49, 21)
+        Label52.Size = New Size(59, 22)
         Label52.TabIndex = 33
         Label52.Text = "$2.99"
         ' 
@@ -1100,7 +1075,7 @@ Partial Class Form1
         Label53.AutoSize = True
         Label53.Location = New Point(33, 80)
         Label53.Name = "Label53"
-        Label53.Size = New Size(89, 21)
+        Label53.Size = New Size(116, 22)
         Label53.TabIndex = 15
         Label53.Text = "Tres Leches"
         ' 
@@ -1115,14 +1090,14 @@ Partial Class Form1
         ' 
         ' GroupBox4
         ' 
-        GroupBox4.BackColor = Color.LightGoldenrodYellow
-        GroupBox4.Controls.Add(RadioButton16)
-        GroupBox4.Controls.Add(RadioButton17)
-        GroupBox4.Controls.Add(RadioButton18)
-        GroupBox4.Controls.Add(RadioButton13)
-        GroupBox4.Controls.Add(RadioButton14)
+        GroupBox4.BackColor = Color.FloralWhite
+        GroupBox4.Controls.Add(RadioButtonmix8oz)
+        GroupBox4.Controls.Add(RadioButtonbeer)
+        GroupBox4.Controls.Add(RadioButtonmix12oz)
+        GroupBox4.Controls.Add(RadioButton16oz)
+        GroupBox4.Controls.Add(RadioButtonwater)
         GroupBox4.Controls.Add(Label21)
-        GroupBox4.Controls.Add(RadioButton15)
+        GroupBox4.Controls.Add(RadioButton32oz)
         GroupBox4.Controls.Add(TextBoxqtydrinks)
         GroupBox4.Controls.Add(ButtonDRINKS)
         GroupBox4.Controls.Add(Label54)
@@ -1138,7 +1113,7 @@ Partial Class Form1
         GroupBox4.Controls.Add(Label64)
         GroupBox4.Controls.Add(Button6)
         GroupBox4.Controls.Add(Label65)
-        GroupBox4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupBox4.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         GroupBox4.Location = New Point(703, 406)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(495, 223)
@@ -1146,55 +1121,55 @@ Partial Class Form1
         GroupBox4.TabStop = False
         GroupBox4.Text = "DRINKS"
         ' 
-        ' RadioButton16
+        ' RadioButtonmix8oz
         ' 
-        RadioButton16.AutoSize = True
-        RadioButton16.Location = New Point(283, 115)
-        RadioButton16.Name = "RadioButton16"
-        RadioButton16.Size = New Size(14, 13)
-        RadioButton16.TabIndex = 105
-        RadioButton16.TabStop = True
-        RadioButton16.UseVisualStyleBackColor = True
+        RadioButtonmix8oz.AutoSize = True
+        RadioButtonmix8oz.Location = New Point(261, 115)
+        RadioButtonmix8oz.Name = "RadioButtonmix8oz"
+        RadioButtonmix8oz.Size = New Size(14, 13)
+        RadioButtonmix8oz.TabIndex = 105
+        RadioButtonmix8oz.TabStop = True
+        RadioButtonmix8oz.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton17
+        ' RadioButtonbeer
         ' 
-        RadioButton17.AutoSize = True
-        RadioButton17.Location = New Point(283, 75)
-        RadioButton17.Name = "RadioButton17"
-        RadioButton17.Size = New Size(14, 13)
-        RadioButton17.TabIndex = 104
-        RadioButton17.TabStop = True
-        RadioButton17.UseVisualStyleBackColor = True
+        RadioButtonbeer.AutoSize = True
+        RadioButtonbeer.Location = New Point(261, 75)
+        RadioButtonbeer.Name = "RadioButtonbeer"
+        RadioButtonbeer.Size = New Size(14, 13)
+        RadioButtonbeer.TabIndex = 104
+        RadioButtonbeer.TabStop = True
+        RadioButtonbeer.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton18
+        ' RadioButtonmix12oz
         ' 
-        RadioButton18.AutoSize = True
-        RadioButton18.Location = New Point(283, 159)
-        RadioButton18.Name = "RadioButton18"
-        RadioButton18.Size = New Size(14, 13)
-        RadioButton18.TabIndex = 103
-        RadioButton18.TabStop = True
-        RadioButton18.UseVisualStyleBackColor = True
+        RadioButtonmix12oz.AutoSize = True
+        RadioButtonmix12oz.Location = New Point(261, 159)
+        RadioButtonmix12oz.Name = "RadioButtonmix12oz"
+        RadioButtonmix12oz.Size = New Size(14, 13)
+        RadioButtonmix12oz.TabIndex = 103
+        RadioButtonmix12oz.TabStop = True
+        RadioButtonmix12oz.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton13
+        ' RadioButton16oz
         ' 
-        RadioButton13.AutoSize = True
-        RadioButton13.Location = New Point(19, 116)
-        RadioButton13.Name = "RadioButton13"
-        RadioButton13.Size = New Size(14, 13)
-        RadioButton13.TabIndex = 102
-        RadioButton13.TabStop = True
-        RadioButton13.UseVisualStyleBackColor = True
+        RadioButton16oz.AutoSize = True
+        RadioButton16oz.Location = New Point(19, 116)
+        RadioButton16oz.Name = "RadioButton16oz"
+        RadioButton16oz.Size = New Size(14, 13)
+        RadioButton16oz.TabIndex = 102
+        RadioButton16oz.TabStop = True
+        RadioButton16oz.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton14
+        ' RadioButtonwater
         ' 
-        RadioButton14.AutoSize = True
-        RadioButton14.Location = New Point(19, 77)
-        RadioButton14.Name = "RadioButton14"
-        RadioButton14.Size = New Size(14, 13)
-        RadioButton14.TabIndex = 101
-        RadioButton14.TabStop = True
-        RadioButton14.UseVisualStyleBackColor = True
+        RadioButtonwater.AutoSize = True
+        RadioButtonwater.Location = New Point(19, 77)
+        RadioButtonwater.Name = "RadioButtonwater"
+        RadioButtonwater.Size = New Size(14, 13)
+        RadioButtonwater.TabIndex = 101
+        RadioButtonwater.TabStop = True
+        RadioButtonwater.UseVisualStyleBackColor = True
         ' 
         ' Label21
         ' 
@@ -1206,15 +1181,15 @@ Partial Class Form1
         Label21.TabIndex = 97
         Label21.Text = "QTY"
         ' 
-        ' RadioButton15
+        ' RadioButton32oz
         ' 
-        RadioButton15.AutoSize = True
-        RadioButton15.Location = New Point(19, 159)
-        RadioButton15.Name = "RadioButton15"
-        RadioButton15.Size = New Size(14, 13)
-        RadioButton15.TabIndex = 100
-        RadioButton15.TabStop = True
-        RadioButton15.UseVisualStyleBackColor = True
+        RadioButton32oz.AutoSize = True
+        RadioButton32oz.Location = New Point(19, 159)
+        RadioButton32oz.Name = "RadioButton32oz"
+        RadioButton32oz.Size = New Size(14, 13)
+        RadioButton32oz.TabIndex = 100
+        RadioButton32oz.TabStop = True
+        RadioButton32oz.UseVisualStyleBackColor = True
         ' 
         ' TextBoxqtydrinks
         ' 
@@ -1237,18 +1212,18 @@ Partial Class Form1
         ' Label54
         ' 
         Label54.AutoSize = True
-        Label54.Location = New Point(425, 155)
+        Label54.Location = New Point(414, 154)
         Label54.Name = "Label54"
-        Label54.Size = New Size(58, 21)
+        Label54.Size = New Size(70, 22)
         Label54.TabIndex = 43
         Label54.Text = "$10.99"
         ' 
         ' Label55
         ' 
         Label55.AutoSize = True
-        Label55.Location = New Point(301, 153)
+        Label55.Location = New Point(279, 153)
         Label55.Name = "Label55"
-        Label55.Size = New Size(115, 21)
+        Label55.Size = New Size(133, 22)
         Label55.TabIndex = 42
         Label55.Text = "12oz Mix Drink"
         ' 
@@ -1257,16 +1232,16 @@ Partial Class Form1
         Label56.AutoSize = True
         Label56.Location = New Point(425, 111)
         Label56.Name = "Label56"
-        Label56.Size = New Size(49, 21)
+        Label56.Size = New Size(59, 22)
         Label56.TabIndex = 41
         Label56.Text = "$7.99"
         ' 
         ' Label57
         ' 
         Label57.AutoSize = True
-        Label57.Location = New Point(301, 110)
+        Label57.Location = New Point(279, 110)
         Label57.Name = "Label57"
-        Label57.Size = New Size(106, 21)
+        Label57.Size = New Size(122, 22)
         Label57.TabIndex = 40
         Label57.Text = "8oz Mix Drink"
         ' 
@@ -1275,16 +1250,16 @@ Partial Class Form1
         Label58.AutoSize = True
         Label58.Location = New Point(425, 71)
         Label58.Name = "Label58"
-        Label58.Size = New Size(49, 21)
+        Label58.Size = New Size(59, 22)
         Label58.TabIndex = 39
         Label58.Text = "$2.99"
         ' 
         ' Label59
         ' 
         Label59.AutoSize = True
-        Label59.Location = New Point(301, 71)
+        Label59.Location = New Point(279, 71)
         Label59.Name = "Label59"
-        Label59.Size = New Size(41, 21)
+        Label59.Size = New Size(51, 22)
         Label59.TabIndex = 38
         Label59.Text = "Beer"
         ' 
@@ -1293,7 +1268,7 @@ Partial Class Form1
         Label60.AutoSize = True
         Label60.Location = New Point(161, 152)
         Label60.Name = "Label60"
-        Label60.Size = New Size(49, 21)
+        Label60.Size = New Size(59, 22)
         Label60.TabIndex = 37
         Label60.Text = "$2.99"
         ' 
@@ -1302,7 +1277,7 @@ Partial Class Form1
         Label61.AutoSize = True
         Label61.Location = New Point(39, 152)
         Label61.Name = "Label61"
-        Label61.Size = New Size(86, 21)
+        Label61.Size = New Size(100, 22)
         Label61.TabIndex = 36
         Label61.Text = "32oz Drink"
         ' 
@@ -1311,7 +1286,7 @@ Partial Class Form1
         Label62.AutoSize = True
         Label62.Location = New Point(161, 110)
         Label62.Name = "Label62"
-        Label62.Size = New Size(49, 21)
+        Label62.Size = New Size(59, 22)
         Label62.TabIndex = 35
         Label62.Text = "$1.99"
         ' 
@@ -1320,7 +1295,7 @@ Partial Class Form1
         Label63.AutoSize = True
         Label63.Location = New Point(37, 110)
         Label63.Name = "Label63"
-        Label63.Size = New Size(86, 21)
+        Label63.Size = New Size(100, 22)
         Label63.TabIndex = 34
         Label63.Text = "16oz Drink"
         ' 
@@ -1329,7 +1304,7 @@ Partial Class Form1
         Label64.AutoSize = True
         Label64.Location = New Point(161, 71)
         Label64.Name = "Label64"
-        Label64.Size = New Size(49, 21)
+        Label64.Size = New Size(59, 22)
         Label64.TabIndex = 33
         Label64.Text = "$1.99"
         ' 
@@ -1347,7 +1322,7 @@ Partial Class Form1
         Label65.AutoSize = True
         Label65.Location = New Point(37, 71)
         Label65.Name = "Label65"
-        Label65.Size = New Size(95, 21)
+        Label65.Size = New Size(114, 22)
         Label65.TabIndex = 15
         Label65.Text = "Water Bottle"
         ' 
@@ -1355,10 +1330,10 @@ Partial Class Form1
         ' 
         Buttonsalida.BackColor = Color.White
         Buttonsalida.BackgroundImageLayout = ImageLayout.None
-        Buttonsalida.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Buttonsalida.Location = New Point(891, 652)
+        Buttonsalida.Font = New Font("Arial", 15.75F)
+        Buttonsalida.Location = New Point(428, 614)
         Buttonsalida.Name = "Buttonsalida"
-        Buttonsalida.Size = New Size(124, 73)
+        Buttonsalida.Size = New Size(153, 73)
         Buttonsalida.TabIndex = 19
         Buttonsalida.Text = "EXIT"
         Buttonsalida.UseVisualStyleBackColor = False
@@ -1367,31 +1342,19 @@ Partial Class Form1
         ' 
         Button1.BackColor = Color.White
         Button1.BackgroundImageLayout = ImageLayout.None
-        Button1.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(428, 599)
+        Button1.Font = New Font("Arial", 15.75F)
+        Button1.Location = New Point(428, 515)
         Button1.Name = "Button1"
         Button1.Size = New Size(153, 73)
         Button1.TabIndex = 20
-        Button1.Text = "CALCULATE"
+        Button1.Text = "TOTALSALES"
         Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Button7
-        ' 
-        Button7.BackColor = Color.White
-        Button7.BackgroundImageLayout = ImageLayout.None
-        Button7.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button7.Location = New Point(428, 509)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(151, 73)
-        Button7.TabIndex = 21
-        Button7.Text = "CLEAR "
-        Button7.UseVisualStyleBackColor = False
         ' 
         ' RichTextBoxITEM1
         ' 
         RichTextBoxITEM1.BackColor = Color.Honeydew
         RichTextBoxITEM1.BorderStyle = BorderStyle.None
-        RichTextBoxITEM1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM1.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM1.Location = New Point(57, 201)
         RichTextBoxITEM1.Name = "RichTextBoxITEM1"
@@ -1404,7 +1367,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY1.BackColor = Color.Honeydew
         RichTextBoxQTY1.BorderStyle = BorderStyle.None
-        RichTextBoxQTY1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY1.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY1.Location = New Point(24, 201)
         RichTextBoxQTY1.Name = "RichTextBoxQTY1"
@@ -1417,7 +1380,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE1.BackColor = Color.Honeydew
         RichTextBoxPRICE1.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE1.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE1.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE1.Location = New Point(280, 201)
         RichTextBoxPRICE1.Name = "RichTextBoxPRICE1"
@@ -1431,7 +1394,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY2.BackColor = Color.Honeydew
         RichTextBoxQTY2.BorderStyle = BorderStyle.None
-        RichTextBoxQTY2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY2.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY2.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY2.Location = New Point(24, 235)
         RichTextBoxQTY2.Name = "RichTextBoxQTY2"
@@ -1444,7 +1407,7 @@ Partial Class Form1
         ' 
         RichTextBoxITEM2.BackColor = Color.Honeydew
         RichTextBoxITEM2.BorderStyle = BorderStyle.None
-        RichTextBoxITEM2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM2.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM2.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM2.Location = New Point(57, 235)
         RichTextBoxITEM2.Name = "RichTextBoxITEM2"
@@ -1457,7 +1420,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE2.BackColor = Color.Honeydew
         RichTextBoxPRICE2.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE2.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE2.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE2.Location = New Point(280, 235)
         RichTextBoxPRICE2.Name = "RichTextBoxPRICE2"
@@ -1471,7 +1434,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY3.BackColor = Color.Honeydew
         RichTextBoxQTY3.BorderStyle = BorderStyle.None
-        RichTextBoxQTY3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY3.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY3.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY3.Location = New Point(24, 268)
         RichTextBoxQTY3.Name = "RichTextBoxQTY3"
@@ -1484,7 +1447,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE3.BackColor = Color.Honeydew
         RichTextBoxPRICE3.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE3.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE3.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE3.Location = New Point(280, 269)
         RichTextBoxPRICE3.Name = "RichTextBoxPRICE3"
@@ -1498,7 +1461,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY4.BackColor = Color.Honeydew
         RichTextBoxQTY4.BorderStyle = BorderStyle.None
-        RichTextBoxQTY4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY4.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY4.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY4.Location = New Point(24, 302)
         RichTextBoxQTY4.Name = "RichTextBoxQTY4"
@@ -1511,7 +1474,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE4.BackColor = Color.Honeydew
         RichTextBoxPRICE4.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE4.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE4.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE4.Location = New Point(280, 303)
         RichTextBoxPRICE4.Name = "RichTextBoxPRICE4"
@@ -1525,12 +1488,12 @@ Partial Class Form1
         ' 
         RichTextBoxCHECKNUM.BackColor = SystemColors.ButtonHighlight
         RichTextBoxCHECKNUM.BorderStyle = BorderStyle.None
-        RichTextBoxCHECKNUM.Font = New Font("Segoe UI Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        RichTextBoxCHECKNUM.Font = New Font("Arial", 14.25F)
         RichTextBoxCHECKNUM.ForeColor = Color.OrangeRed
-        RichTextBoxCHECKNUM.Location = New Point(267, 136)
+        RichTextBoxCHECKNUM.Location = New Point(267, 150)
         RichTextBoxCHECKNUM.Name = "RichTextBoxCHECKNUM"
         RichTextBoxCHECKNUM.ReadOnly = True
-        RichTextBoxCHECKNUM.Size = New Size(87, 38)
+        RichTextBoxCHECKNUM.Size = New Size(87, 28)
         RichTextBoxCHECKNUM.TabIndex = 34
         RichTextBoxCHECKNUM.Text = ""
         ' 
@@ -1538,7 +1501,7 @@ Partial Class Form1
         ' 
         Button8.BackColor = Color.White
         Button8.BackgroundImageLayout = ImageLayout.None
-        Button8.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button8.Font = New Font("Arial", 15.75F)
         Button8.Location = New Point(428, 421)
         Button8.Name = "Button8"
         Button8.Size = New Size(153, 73)
@@ -1550,8 +1513,8 @@ Partial Class Form1
         ' 
         RichTextBoxserver.BackColor = SystemColors.ButtonHighlight
         RichTextBoxserver.BorderStyle = BorderStyle.None
-        RichTextBoxserver.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RichTextBoxserver.Location = New Point(197, 146)
+        RichTextBoxserver.Font = New Font("Arial", 14.25F)
+        RichTextBoxserver.Location = New Point(197, 150)
         RichTextBoxserver.Name = "RichTextBoxserver"
         RichTextBoxserver.ReadOnly = True
         RichTextBoxserver.Size = New Size(49, 28)
@@ -1562,8 +1525,8 @@ Partial Class Form1
         ' 
         RichTextBoxdate.BackColor = SystemColors.ButtonHighlight
         RichTextBoxdate.BorderStyle = BorderStyle.None
-        RichTextBoxdate.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RichTextBoxdate.Location = New Point(57, 142)
+        RichTextBoxdate.Font = New Font("Arial", 14.25F)
+        RichTextBoxdate.Location = New Point(57, 150)
         RichTextBoxdate.Name = "RichTextBoxdate"
         RichTextBoxdate.ReadOnly = True
         RichTextBoxdate.Size = New Size(114, 28)
@@ -1574,7 +1537,7 @@ Partial Class Form1
         ' 
         DateTimePicker1.AllowDrop = True
         DateTimePicker1.CalendarFont = New Font("Segoe UI", 9.75F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.Location = New Point(77, 717)
+        DateTimePicker1.Location = New Point(127, 99)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(210, 23)
         DateTimePicker1.TabIndex = 39
@@ -1583,7 +1546,7 @@ Partial Class Form1
         ' 
         RichTextBoxITEM5.BackColor = Color.Honeydew
         RichTextBoxITEM5.BorderStyle = BorderStyle.None
-        RichTextBoxITEM5.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM5.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM5.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM5.Location = New Point(57, 338)
         RichTextBoxITEM5.Name = "RichTextBoxITEM5"
@@ -1648,7 +1611,7 @@ Partial Class Form1
         ' 
         RichTextBoxITEM6.BackColor = Color.Honeydew
         RichTextBoxITEM6.BorderStyle = BorderStyle.None
-        RichTextBoxITEM6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM6.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM6.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM6.Location = New Point(57, 372)
         RichTextBoxITEM6.Name = "RichTextBoxITEM6"
@@ -1713,7 +1676,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY6.BackColor = Color.Honeydew
         RichTextBoxQTY6.BorderStyle = BorderStyle.None
-        RichTextBoxQTY6.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY6.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY6.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY6.Location = New Point(24, 372)
         RichTextBoxQTY6.Name = "RichTextBoxQTY6"
@@ -1726,7 +1689,7 @@ Partial Class Form1
         ' 
         RichTextBoxQTY5.BackColor = Color.Honeydew
         RichTextBoxQTY5.BorderStyle = BorderStyle.None
-        RichTextBoxQTY5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxQTY5.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxQTY5.ForeColor = Color.DarkSlateBlue
         RichTextBoxQTY5.Location = New Point(24, 338)
         RichTextBoxQTY5.Name = "RichTextBoxQTY5"
@@ -1819,7 +1782,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE6.BackColor = Color.Honeydew
         RichTextBoxPRICE6.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE6.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE6.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE6.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE6.Location = New Point(280, 372)
         RichTextBoxPRICE6.Name = "RichTextBoxPRICE6"
@@ -1833,7 +1796,7 @@ Partial Class Form1
         ' 
         RichTextBoxPRICE5.BackColor = Color.Honeydew
         RichTextBoxPRICE5.BorderStyle = BorderStyle.None
-        RichTextBoxPRICE5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
+        RichTextBoxPRICE5.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxPRICE5.ForeColor = Color.DarkSlateBlue
         RichTextBoxPRICE5.Location = New Point(280, 338)
         RichTextBoxPRICE5.Name = "RichTextBoxPRICE5"
@@ -1903,7 +1866,7 @@ Partial Class Form1
         ' 
         RichTextBoxITEM3.BackColor = Color.Honeydew
         RichTextBoxITEM3.BorderStyle = BorderStyle.None
-        RichTextBoxITEM3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM3.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM3.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM3.Location = New Point(57, 270)
         RichTextBoxITEM3.Name = "RichTextBoxITEM3"
@@ -1916,7 +1879,7 @@ Partial Class Form1
         ' 
         RichTextBoxITEM4.BackColor = Color.Honeydew
         RichTextBoxITEM4.BorderStyle = BorderStyle.None
-        RichTextBoxITEM4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        RichTextBoxITEM4.Font = New Font("Arial", 14.25F, FontStyle.Bold)
         RichTextBoxITEM4.ForeColor = Color.DarkSlateBlue
         RichTextBoxITEM4.Location = New Point(57, 302)
         RichTextBoxITEM4.Name = "RichTextBoxITEM4"
@@ -1929,8 +1892,8 @@ Partial Class Form1
         ' 
         RichTextBoxtax.BackColor = Color.Honeydew
         RichTextBoxtax.BorderStyle = BorderStyle.None
-        RichTextBoxtax.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
-        RichTextBoxtax.ForeColor = Color.MidnightBlue
+        RichTextBoxtax.Font = New Font("Arial", 14.25F, FontStyle.Bold)
+        RichTextBoxtax.ForeColor = Color.Red
         RichTextBoxtax.Location = New Point(293, 639)
         RichTextBoxtax.Multiline = False
         RichTextBoxtax.Name = "RichTextBoxtax"
@@ -1944,8 +1907,8 @@ Partial Class Form1
         ' 
         RichTextBoxtotal.BackColor = Color.Honeydew
         RichTextBoxtotal.BorderStyle = BorderStyle.None
-        RichTextBoxtotal.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold)
-        RichTextBoxtotal.ForeColor = Color.MidnightBlue
+        RichTextBoxtotal.Font = New Font("Arial", 14.25F, FontStyle.Bold)
+        RichTextBoxtotal.ForeColor = Color.Red
         RichTextBoxtotal.Location = New Point(293, 678)
         RichTextBoxtotal.Multiline = False
         RichTextBoxtotal.Name = "RichTextBoxtotal"
@@ -1960,9 +1923,9 @@ Partial Class Form1
         Label16.BackColor = SystemColors.ButtonHighlight
         Label16.Font = New Font("Microsoft Himalaya", 15.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label16.ForeColor = SystemColors.ActiveCaptionText
-        Label16.Location = New Point(130, 76)
+        Label16.Location = New Point(141, 48)
         Label16.Name = "Label16"
-        Label16.Size = New Size(187, 16)
+        Label16.Size = New Size(176, 16)
         Label16.TabIndex = 68
         Label16.Text = "Emmanuel G. Negrón"
         Label16.TextAlign = ContentAlignment.TopCenter
@@ -1995,8 +1958,8 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.Info
-        ClientSize = New Size(1459, 737)
+        BackColor = SystemColors.Control
+        ClientSize = New Size(1466, 733)
         Controls.Add(Label16)
         Controls.Add(RichTextBoxtotal)
         Controls.Add(RichTextBoxtax)
@@ -2042,7 +2005,6 @@ Partial Class Form1
         Controls.Add(RichTextBoxPRICE3)
         Controls.Add(RichTextBoxPRICE2)
         Controls.Add(RichTextBoxPRICE1)
-        Controls.Add(Button7)
         Controls.Add(Button1)
         Controls.Add(Buttonsalida)
         Controls.Add(GroupBox4)
@@ -2053,20 +2015,17 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(PictureBox7)
         Controls.Add(PictureBox6)
-        Controls.Add(PictureBox4)
         Controls.Add(PictureBox3)
-        Controls.Add(PictureBox2)
         Controls.Add(Label17)
         Controls.Add(Label18)
+        Cursor = Cursors.Cross
         MaximizeBox = False
         MdiChildrenMinimizedAnchorBottom = False
         MinimizeBox = False
         Name = "Form1"
         ShowIcon = False
         Text = "Pizzeria Yukatan"
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -2085,9 +2044,7 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
@@ -2153,7 +2110,6 @@ Partial Class Form1
     Friend WithEvents Label65 As Label
     Friend WithEvents Buttonsalida As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents RichTextBoxITEM1 As RichTextBox
     Friend WithEvents RichTextBoxQTY1 As RichTextBox
     Friend WithEvents RichTextBoxPRICE1 As RichTextBox
@@ -2224,25 +2180,25 @@ Partial Class Form1
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents RadioButton11 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
+    Friend WithEvents RadioButtonhwings As RadioButton
+    Friend WithEvents RadioButtonwings As RadioButton
+    Friend WithEvents RadioButtonempanada As RadioButton
+    Friend WithEvents RadioButtongarlicb As RadioButton
+    Friend WithEvents RadioButtonmozzarella As RadioButton
+    Friend WithEvents RadioButtonsampler As RadioButton
+    Friend WithEvents RadioButtonicecream As RadioButton
+    Friend WithEvents RadioButtonccake As RadioButton
+    Friend WithEvents RadioButtoncflan As RadioButton
+    Friend WithEvents RadioButtonvflan As RadioButton
+    Friend WithEvents RadioButtontreslech As RadioButton
+    Friend WithEvents RadioButtonicecreamc As RadioButton
     Friend WithEvents Label21 As Label
     Friend WithEvents TextBoxqtydrinks As TextBox
-    Friend WithEvents RadioButton16 As RadioButton
-    Friend WithEvents RadioButton17 As RadioButton
-    Friend WithEvents RadioButton18 As RadioButton
-    Friend WithEvents RadioButton13 As RadioButton
-    Friend WithEvents RadioButton14 As RadioButton
-    Friend WithEvents RadioButton15 As RadioButton
+    Friend WithEvents RadioButtonmix8oz As RadioButton
+    Friend WithEvents RadioButtonbeer As RadioButton
+    Friend WithEvents RadioButtonmix12oz As RadioButton
+    Friend WithEvents RadioButton16oz As RadioButton
+    Friend WithEvents RadioButtonwater As RadioButton
+    Friend WithEvents RadioButton32oz As RadioButton
 
 End Class

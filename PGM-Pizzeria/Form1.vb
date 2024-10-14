@@ -20,11 +20,11 @@
     ' Narrativa:         PGM DE PIZZERIA
 
 
-    Dim pizzas() As Double = {9.99, 10.99, 12.99, 15.99, 20.99, 39.99}
+
     Dim QTY As Integer = 0
     Dim itemlist As Integer = 0
     Const taxEstatal As Double = 0.07
-    Dim totalnet, totaltax, totalall, itemprice As Double
+    Public totalnet, totaltax, totalall, itemprice, totalsale As Double
 
 
 
@@ -40,6 +40,42 @@
         RichTextBoxCHECKNUM.Text = checknum
         RichTextBoxserver.Text = server
         RichTextBoxdate.Text = TimeOfDay
+
+
+        RichTextBoxQTY1.Text = ""
+        RichTextBoxITEM1.Text = ""
+        RichTextBoxPRICE1.Text = ""
+
+        RichTextBoxQTY2.Text = ""
+        RichTextBoxITEM2.Text = ""
+        RichTextBoxPRICE2.Text = ""
+
+        RichTextBoxQTY3.Text = ""
+        RichTextBoxITEM3.Text = ""
+        RichTextBoxPRICE3.Text = ""
+
+        RichTextBoxQTY4.Text = ""
+        RichTextBoxITEM4.Text = ""
+        RichTextBoxPRICE4.Text = ""
+
+        RichTextBoxQTY5.Text = ""
+        RichTextBoxITEM5.Text = ""
+        RichTextBoxPRICE5.Text = ""
+
+        RichTextBoxQTY6.Text = ""
+        RichTextBoxITEM6.Text = ""
+        RichTextBoxPRICE6.Text = ""
+
+        RichTextBoxtax.Text = ""
+        RichTextBoxtotal.Text = ""
+
+        totalsale = totalall + totalsale
+
+        itemlist = 0
+        totalnet = 0
+        totaltax = 0
+        totalall = 0
+
     End Sub
 
 
@@ -72,7 +108,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -94,7 +130,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -116,7 +152,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -137,7 +173,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -159,7 +195,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -179,7 +215,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -942,7 +978,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -964,7 +1000,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -985,7 +1021,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1007,7 +1043,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1027,7 +1063,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1769,7 +1805,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1791,7 +1827,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1813,7 +1849,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1834,7 +1870,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1856,7 +1892,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -1876,7 +1912,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2617,7 +2653,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2639,7 +2675,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2661,7 +2697,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2682,7 +2718,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2704,7 +2740,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -2724,7 +2760,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3448,7 +3484,7 @@
         'Sportman PIZZA ==============================================================================
 
         'ITEM 1 Sportman
-        If (RadioButtonxllarge.Checked And itemlist = 1) Then
+        If (RadioButtonsportman.Checked And itemlist = 1) Then
 
 
             If (RadioButtonpepperoni.Checked) Then
@@ -3465,7 +3501,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3487,7 +3523,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3509,7 +3545,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3530,7 +3566,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3552,7 +3588,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -3572,7 +3608,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4313,7 +4349,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4335,7 +4371,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4357,7 +4393,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4378,7 +4414,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4400,7 +4436,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -4420,7 +4456,7 @@
 
                 totalnet = (QTY * itemprice)
                 totaltax = (taxEstatal * totalnet)
-                totalall = (totalnet + totalall)
+                totalall = (totalnet + totalall) + totaltax
 
                 RichTextBoxtax.Text = FormatCurrency(totaltax)
                 RichTextBoxtotal.Text = FormatCurrency(totalall)
@@ -5141,4 +5177,1233 @@
         'END superman PIZZA ==============================================================================
     End Sub
 
+    Private Sub ButtonSIDES_Click(sender As Object, e As EventArgs) Handles ButtonSIDES.Click
+        itemlist = itemlist + 1
+
+
+        'ITEM 1 
+        If (itemlist = 1) Then
+
+
+            If (RadioButtonmozzarella.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Mozzarella Sticks"
+                RichTextBoxPRICE1.Text = FormatCurrency("9.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtongarlicb.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Garlic bread"
+                RichTextBoxPRICE1.Text = FormatCurrency("10.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonempanada.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Empanadas"
+                RichTextBoxPRICE1.Text = FormatCurrency("11.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonwings.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Wings"
+                RichTextBoxPRICE1.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonhwings.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Hot wings"
+                RichTextBoxPRICE1.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonsampler.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtyside.Text
+                RichTextBoxITEM1.Text = "Sampler"
+                RichTextBoxPRICE1.Text = FormatCurrency("20.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 2 
+        If (itemlist = 2) Then
+
+
+            If (RadioButtonmozzarella.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Mozzarella Sticks"
+                RichTextBoxPRICE2.Text = FormatCurrency("9.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtongarlicb.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Garlic bread"
+                RichTextBoxPRICE2.Text = FormatCurrency("10.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonempanada.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Empanadas"
+                RichTextBoxPRICE2.Text = FormatCurrency("11.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonwings.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Wings"
+                RichTextBoxPRICE2.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonhwings.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Hot wings"
+                RichTextBoxPRICE2.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonsampler.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtyside.Text
+                RichTextBoxITEM2.Text = "Sampler"
+                RichTextBoxPRICE2.Text = FormatCurrency("20.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 3 
+        If (itemlist = 3) Then
+
+
+            If (RadioButtonmozzarella.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Mozzarella Sticks"
+                RichTextBoxPRICE3.Text = FormatCurrency("9.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtongarlicb.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Garlic bread"
+                RichTextBoxPRICE3.Text = FormatCurrency("10.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonempanada.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Empanadas"
+                RichTextBoxPRICE3.Text = FormatCurrency("11.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonwings.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Wings"
+                RichTextBoxPRICE3.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonhwings.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Hot wings"
+                RichTextBoxPRICE3.Text = FormatCurrency("12.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonsampler.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtyside.Text
+                RichTextBoxITEM3.Text = "Sampler"
+                RichTextBoxPRICE3.Text = FormatCurrency("20.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+    End Sub
+
+    Private Sub ButtonDESSERTS_Click(sender As Object, e As EventArgs) Handles ButtonDESSERTS.Click
+
+        itemlist = itemlist + 1
+
+
+        'ITEM 1 dessert
+        If (itemlist = 1) Then
+
+
+            If (RadioButtontreslech.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Tres Leches"
+                RichTextBoxPRICE1.Text = FormatCurrency("2.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonvflan.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Vanilla Flan"
+                RichTextBoxPRICE1.Text = FormatCurrency("3.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtoncflan.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Cheese Flan"
+                RichTextBoxPRICE1.Text = FormatCurrency("4.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonccake.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Cheesecake"
+                RichTextBoxPRICE1.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecream.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Ice cream"
+                RichTextBoxPRICE1.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecreamc.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM1.Text = "Ice cream & cake"
+                RichTextBoxPRICE1.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 2 dessert
+        If (itemlist = 2) Then
+
+
+            If (RadioButtontreslech.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Tres Leches"
+                RichTextBoxPRICE2.Text = FormatCurrency("2.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonvflan.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Vanilla Flan"
+                RichTextBoxPRICE2.Text = FormatCurrency("3.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtoncflan.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Cheese Flan"
+                RichTextBoxPRICE2.Text = FormatCurrency("4.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonccake.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Cheesecake"
+                RichTextBoxPRICE2.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecream.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Ice cream"
+                RichTextBoxPRICE2.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecreamc.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM2.Text = "Ice cream & cake"
+                RichTextBoxPRICE2.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 3 dessert
+        If (itemlist = 3) Then
+
+
+            If (RadioButtontreslech.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Tres Leches"
+                RichTextBoxPRICE3.Text = FormatCurrency("2.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtonvflan.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Vanilla Flan"
+                RichTextBoxPRICE3.Text = FormatCurrency("3.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButtoncflan.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Cheese Flan"
+                RichTextBoxPRICE3.Text = FormatCurrency("4.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonccake.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Cheesecake"
+                RichTextBoxPRICE3.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecream.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Ice cream"
+                RichTextBoxPRICE3.Text = FormatCurrency("5.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonicecreamc.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydessert.Text
+                RichTextBoxITEM3.Text = "Ice cream & cake"
+                RichTextBoxPRICE3.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+    End Sub
+
+
+
+    'drink s
+    Private Sub ButtonDRINKS_Click(sender As Object, e As EventArgs) Handles ButtonDRINKS.Click
+        itemlist = itemlist + 1
+
+        'ITEM 1 drinks
+        If (itemlist = 1) Then
+
+
+            If (RadioButtonwater.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "Water bottle"
+                RichTextBoxPRICE1.Text = FormatCurrency("1.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton16oz.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "16oz drink"
+                RichTextBoxPRICE1.Text = FormatCurrency("1.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton32oz.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "32oz drink"
+                RichTextBoxPRICE1.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonbeer.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "Beer"
+                RichTextBoxPRICE1.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix8oz.Checked) Then
+
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "Mix drink 8oz"
+                RichTextBoxPRICE1.Text = FormatCurrency("7.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix12oz.Checked) Then
+
+                RichTextBoxQTY1.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM1.Text = "Mix drink 12oz"
+                RichTextBoxPRICE1.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE1.Text)
+                QTY = CInt(RichTextBoxQTY1.Text)
+                'Calculation
+
+                totalnet = (QTY * itemprice)
+                totaltax = (taxEstatal * totalnet)
+                totalall = (totalnet + totalall) + totaltax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 2 drinks
+        If (itemlist = 2) Then
+
+
+            If (RadioButtonwater.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "Water bottle"
+                RichTextBoxPRICE2.Text = FormatCurrency("1.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton16oz.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "16oz drink"
+                RichTextBoxPRICE2.Text = FormatCurrency("1.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton32oz.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "32oz drink"
+                RichTextBoxPRICE2.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonbeer.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "Beer"
+                RichTextBoxPRICE2.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix8oz.Checked) Then
+
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "Mix drink 8oz"
+                RichTextBoxPRICE2.Text = FormatCurrency("7.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix12oz.Checked) Then
+
+                RichTextBoxQTY2.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM2.Text = "Mix drink 12oz"
+                RichTextBoxPRICE2.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE2.Text)
+                QTY = CInt(RichTextBoxQTY2.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+
+        'ITEM 3 drinks
+        If (itemlist = 3) Then
+
+
+            If (RadioButtonwater.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "Water bottle"
+                RichTextBoxPRICE3.Text = FormatCurrency("1.99")
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton16oz.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "16oz drink"
+                RichTextBoxPRICE3.Text = FormatCurrency("1.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+
+            ElseIf (RadioButton32oz.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "32oz drink"
+                RichTextBoxPRICE3.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonbeer.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "Beer"
+                RichTextBoxPRICE3.Text = FormatCurrency("2.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix8oz.Checked) Then
+
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "Mix drink 8oz"
+                RichTextBoxPRICE3.Text = FormatCurrency("7.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+            ElseIf (RadioButtonmix12oz.Checked) Then
+
+                RichTextBoxQTY3.Text = TextBoxqtydrinks.Text
+                RichTextBoxITEM3.Text = "Mix drink 12oz"
+                RichTextBoxPRICE3.Text = FormatCurrency("9.99")
+
+
+                'Convertion
+
+                itemprice = CDbl(RichTextBoxPRICE3.Text)
+                QTY = CInt(RichTextBoxQTY3.Text)
+                'Calculation
+
+                totalnet = totalnet + (QTY * itemprice) ' Accumulate the net price
+                totaltax = totaltax + (taxEstatal * (QTY * itemprice)) ' Accumulate the tax
+                totalall = totalnet + totaltax ' Grand total after tax
+
+                RichTextBoxtax.Text = FormatCurrency(totaltax)
+                RichTextBoxtotal.Text = FormatCurrency(totalall)
+
+
+            End If
+        End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Form2.Show()
+    End Sub
 End Class
